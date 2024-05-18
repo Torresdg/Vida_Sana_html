@@ -8,22 +8,34 @@ logo{
 }
 
 .logo img{
-    height:40px;
+    height:50%;
     display:flex;
 }
 
-.titulo-logo{
-    text-align:right;
-    padding: 0.3px;
+.titulo-logo {
+    text-align:center;
     font-family: sans-serif;
-    justify-content: space-between;
+    margin: 0;
 }
 
-.main-navigation{
-    position:initial;
-    padding: top 38px;
-    
+nav.main-navigation {
+	position: relative;
+	z-index: 20;
+	padding-top: 38px;
+	z-index: 10000;
 }
+nav.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav.main-navigation ul li {
+	position: relative;
+	display: inline-block;
+	background-color: #f29200;
+	border-radius: 5px;
+}    
+
 body{
     font-family: sans-serif;
     margin: 0;
@@ -62,11 +74,20 @@ padding: 1em;
 .grid :hover{
     border: 1px solid;
 }
+
+#contactonombre15 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    color: #666 !important;
+    text-align: left;
+}
+
 .footer {
-    background: #222;
-    color: #ccc;
+    background-color: #666;
+
 }
 .menu-footer{
     align-items:center;
-    justify-items: space-between;
+    font-family: sans-serif;
+    color: white
 }
